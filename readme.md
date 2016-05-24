@@ -6,12 +6,21 @@ TODO: Write a project description
 ## Installation
 1. clone repository
 
-2. install gulp
+2. Setup local-wp.json file:
+
+	Example path
+	{
+	  "path": "C:\\xampp\\htdocs\\wp\\wp-content\\themes\\"
+	}
+
+3. install gulp
 
 	Install gulp globally: If you have previously installed a version of gulp globally, please run npm rm --global gulp to make sure your old version doesn't collide with gulp-cli. ...
 	Install gulp in your project devDependencies: $ npm install --save-dev gulp.
 	Create a gulpfile.js at the root of your project: ...
 	Run gulp:
+
+	npm run gulp deploy
 
 ## Usage
 TODO: Write usage instructions
