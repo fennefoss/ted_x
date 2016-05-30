@@ -1,8 +1,20 @@
+$navigation__height: 90px;
+
+.site-branding {
+	display: none;
+}
+
 .main-navigation {
+	position: fixed;
+	top: 0;
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	height: $navigation__height;
+	background-color: #000;
+	color: white;
+	opacity: 0.9;
 
 	ul {
 		display: none;
@@ -31,6 +43,7 @@
 			}
 
 			a {
+				color: $color__navigation__link;
 				width: 200px;
 			}
 
@@ -52,6 +65,15 @@
 	li {
 		float: left;
 		position: relative;
+		color: white;
+		height: $navigation__height;
+		padding: 0 15px;
+		line-height: $navigation__height;
+
+		&:hover {
+			background-color: $color__navigation__link-hover;
+		}
+
 
 		&:hover > a,
 		&.focus > a {
@@ -61,6 +83,13 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: $color__navigation__link;
+		font-size: 19px;
+
+		&:visited {
+			color: $color__navigation__link;
+		}
+
 	}
 
 	.current_page_item > a,
@@ -68,6 +97,24 @@
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}
+}
+
+.logo-image {
+	background-image: url(images/logo.svg);
+	height: 44px;
+    width: 208px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+
+.current_page_item {
+	font-weight: bold;
+}
+
+.navigation-section {
+	float: right;
+	margin-right: 150px;
 }
 
 /* Small menu. */
