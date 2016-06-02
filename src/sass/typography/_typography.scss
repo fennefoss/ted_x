@@ -7,7 +7,8 @@
 /*--------------------------------------------------------------
 # 1.General Typopgraphy
 --------------------------------------------------------------*/
-$font__main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500);
+$font__main: 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
 $color__text-body: #000000;
 $color__text-red: #ff2b06;
 $color__text-white: #ffffff;
@@ -30,7 +31,6 @@ textarea {
 	color: $color__text-body;
 	font-family: $font__main;
 	@include font-size(1);
-	line-height: $font__line-height-body;
 	font-weight: $light;
 	-webkit-text-size-adjust: 100%;  //fix for iOS
 }
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	font-size: $font__size-p;
-	line-height: 2em;
+	line-height: 1.4em;
 	
 	.footer {
 		font-size: 14px;
