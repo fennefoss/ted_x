@@ -44,10 +44,6 @@ p {
 	font-size: $font__size-p;
 	line-height: 1.4em;
 	
-	& .footer {
-		font-size: 14px;
-		color: $color__text-grey;
-	}
 }
 
 h1 {
@@ -55,7 +51,7 @@ h1 {
 	font-size: $font__size-h1;
 	font-weight: $semibold;
 
-	& .darkred {
+	.darkred {
 		color: $color__text-darkred;
 	}
 }
