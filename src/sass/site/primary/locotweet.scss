@@ -8,8 +8,7 @@
 }
 
 .locotweet-container {
-	height: 500px;
-	border: 1px solid black;
+	height: 400px;
 	background-color: #ff2b06;
 	-webkit-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
     -moz-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
@@ -20,11 +19,52 @@
 	width: 60px;
 	height: 100%;
 	float: left;
+	margin-top: 130px;
+	margin-left: 100px;
+
+	button {
+		background: #ff2b06;
+    	box-shadow: none;
+    	text-shadow: none;
+    	border-radius: 0;
+    	border: 0;
+    	height: 35px;
+    	width: 35px;
+
+    	&:focus {
+    		outline: 0;
+    	}
+	}
 }
 
 .locotweet-feed {
 	float: left;
 	width: 484px;
+	margin-top: 130px;
+
+	a {
+		color: white;
+		font-weight: bold;
+
+		&:hover {
+			color: black;
+		}
+	}
+}
+
+.locotweet-forward {
+	background-image: url(images/locotweet-forward.svg) !important;
+	margin-bottom: 20px;
+}
+
+.locotweet-backward {
+	background-image: url(images/locotweet-backward.svg) !important;
+}
+
+.locotweet-x {
+	background-image: url(images/x.svg);
+	height: 245px;
+    width: 231px;
 }
 
 #twitter-feed-TEDxAarhus .fts-powered-by-text {

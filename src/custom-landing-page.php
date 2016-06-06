@@ -46,12 +46,13 @@ get_header(); ?>
 
 		<section class="locotweet-container">
 			<div class="locotweet-buttons">
-				<button class="locotweet-forward"><</button>
-				<button class="locotweet-backward">></button>
+				<button class="locotweet-forward"></button>
+				<button class="locotweet-backward"></button>
 			</div>
 			<div class="locotweet-feed">
 				<?php echo $locotweet_markup; ?>
 			</div>
+			<aside class="locotweet-x"></aside>
 		</section>
 
 		<?php

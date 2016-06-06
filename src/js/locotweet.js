@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
 
     $('.locotweet-forward').click(function() {
-         $('.fts-tweeter-wrap.js-active-tweet').prev().addClass('js-active-tweet');
+        $('.fts-tweeter-wrap.js-active-tweet').prev().addClass('js-active-tweet');
         $('.fts-tweeter-wrap.js-active-tweet').next().removeClass('js-active-tweet');
     });
 
