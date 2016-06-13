@@ -1,0 +1,112 @@
+.fts-tweeter-wrap {
+	display: none;
+}
+
+.fts-tweeter-wrap.js-active-tweet {
+	display: block;
+	float: left;
+}
+
+.locotweet-container {
+	height: 400px;
+	background-color: #ff2b06;
+	-webkit-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+    -moz-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+    box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+    position: relative;
+}
+
+.locotweet-header {
+	position: absolute;
+	color: #7d1300;
+	margin-left: 235px;
+}
+
+.locotweet-line {
+    position: absolute;
+    height: 2px;
+    background-color: #7d1300;
+    width: 62px;
+    top: 55px;
+    margin-left: 150px;
+}
+
+.locotweet-buttons {
+	width: 60px;
+	height: 100%;
+	float: left;
+	margin-top: 130px;
+	margin-left: 100px;
+
+	button {
+		background: #ff2b06;
+    	box-shadow: none;
+    	text-shadow: none;
+    	border-radius: 0;
+    	border: 0;
+    	height: 36px;
+    	width: 36px;
+
+    	&:focus {
+    		outline: 0;
+    	}
+	}
+}
+
+.locotweet-feed {
+	float: left;
+	width: 484px;
+	margin-top: 130px;
+	margin-left: 50px;
+
+	a {
+		color: white;
+		font-weight: bold;
+
+		&:hover {
+			color: black;
+		}
+	}
+}
+
+.locotweet-forward {
+	background-image: url(images/locotweet-forward.svg) !important;
+	margin-bottom: 20px;
+}
+
+.locotweet-backward {
+	background-image: url(images/locotweet-backward.svg) !important;
+}
+
+.locotweet-x {
+	background-image: url(images/x.svg);
+	height: 245px;
+    width: 231px;
+    position: absolute;
+    right: 60px;
+    top: -68px;
+}
+
+.locotweet-follow {
+	background-image: url(images/twitterbird.svg) !important;
+    margin-top: 60px;
+    background-color: #3ca0e0;
+    box-shadow: none;
+    border-color: none;
+    color: #fff;
+    font-weight: bold;
+    width: 250px;
+    font-size: 16px;
+    text-shadow: none;
+    background-repeat: no-repeat;
+    background-position: 20px 7px;
+    padding-left: 55px;
+
+    &:hover {
+    	box-shadow: none;
+    }
+}
+
+#twitter-feed-TEDxAarhus .fts-powered-by-text {
+	display: none !important;
+}

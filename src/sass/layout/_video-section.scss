@@ -1,0 +1,53 @@
+.video-container {
+	width: 100%;
+	margin-top: 58px;
+	position: relative;
+}
+
+.video-section {
+	width: 1180px;
+	position: absolute;
+	top: 12%;
+	left: 12%;
+}
+
+.video-header {
+	text-align: left;
+	margin-bottom: 0;
+
+	span {
+		color: $color__text--red;
+	}
+
+}
+
+.video-text {
+	color: $color__text--white;
+}
+
+.video-button {
+	background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0;
+    border: 1px solid $color__text--red;
+    padding: 12px 45px;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+
+    &:hover {
+    	background-color: $color__text--red;
+    	border-color: $color__text--red;
+    	box-shadow: none;
+    }
+}
+
+.video-button-link {
+	font-weight: bold;
+	color: $color__text--white;
+	text-decoration: none;
+
+	&:hover {
+		color: $color__text--white;	
+	}
+}
