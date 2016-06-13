@@ -22,6 +22,10 @@ get_header(); ?>
 		$video_button_link = get_field('video_button_link');
 		$video_button_text = get_field('video_button_text');
 
+		// vars for intro area
+		$intro_header = get_field('intro_header');
+		$intro_text = get_field('intro_text');
+
 		// vars for locotweet
 		$locotweet_markup = get_field('locotweet_markup'); //make it a WYSIWYG editor for custom fields 
 	?>
@@ -43,6 +47,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area landing-page-container">
 		<main id="main" class="site-main" role="main">
+
+		<section class="intro">
+			<h2 class="intro-header"><?php echo $intro_header; ?></h2>
+			<p class="intro-text"><?php echo $intro_text; ?></p>
+		</section>
 
 		<section class="locotweet-container">
 			<div class="locotweet-line"></div>
