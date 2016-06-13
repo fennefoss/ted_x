@@ -45,12 +45,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<section class="locotweet-container">
+			<div class="locotweet-line"></div>
+			<h2 class="locotweet-header">TEDx Social Media</h2>
 			<div class="locotweet-buttons">
 				<button class="locotweet-forward"></button>
 				<button class="locotweet-backward"></button>
 			</div>
 			<div class="locotweet-feed">
 				<?php echo $locotweet_markup; ?>
+				<button class="locotweet-follow">Follow @TEDxAarhus</button>
 			</div>
 			<aside class="locotweet-x"></aside>
 		</section>
