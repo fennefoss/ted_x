@@ -78,4 +78,12 @@
 			self = self.parentElement;
 		}
 	}
+
+	$( "li .sub_menu" ).hover(function() {
+			console.log('hover on');
+		}, function() {
+			console.log('hover out');
+		}
+	);
+
 } )();
