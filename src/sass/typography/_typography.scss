@@ -17,8 +17,9 @@ $color__text-darkred: #7d1300;
 $font__size-p: 22px;
 $font__size-h1: 68px;
 $font__size-h2: 40px;
-$light: 300;
-$semibold: 500;
+$light: 100;
+$normal: 300;
+$bold: 500;
 $font__size: 22px;
 $center: center;
 
@@ -43,13 +44,14 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	font-size: $font__size-p;
 	line-height: 1.4em;
+	font-weight: $normal;
 	
 }
 
 h1 {
 	color: $color__text-white;
 	font-size: $font__size-h1;
-	font-weight: $semibold;
+	font-weight: $bold;
 
 	.darkred {
 		color: $color__text-darkred;
@@ -59,6 +61,7 @@ h1 {
 h2 {
 	color: $color__text-red;
 	font-size: $font__size-h2;
+	font-weight: $light;
 }
 
 /*--------------------------------------------------------------
