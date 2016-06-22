@@ -15,9 +15,8 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ted_x' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ted_x' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ted_x' ), 'ted_x', '<a href="http://underscores.me/" rel="designer">TEDx Aarhus</a>' ); ?>
+			<p class="copyright-notice"><?php printf( esc_html( 'This independent TEDx event is operated under license from %s.', 'ted_x' ), '<a href="https://www.ted.com/">TED</a>' ); ?></p>
+			<p class="copyright-notice"><?php printf( esc_html( 'Copyright &copy; %s TEDxAarhus', 'ted_x' ), date( 'Y' ) ); ?></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
