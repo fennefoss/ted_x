@@ -16,13 +16,18 @@ get_header(); ?>
 
 	<?php
 		$get_in_touch_header = get_field('get_in_touch_header');
-		$get_in_touch_text = get_field('get_in_touch_text');
+		$get_in_touch_intro_p = get_field('get_in_touch_intro_p');
+		$get_in_touch_body_text = get_field('get_in_touch_body_text');
 	?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<section class="contact_container">
+		<section class="contact_intro">
 			<h2 class="get-in-touch-h2"><?php echo $get_in_touch_header; ?></h2>
+			<p class="get_in_touch_intro_p"><?php echo $get_in_touch_intro_p; ?></p>
+		</section>
+		<section class="contact_container">
+			<p class="get_in_touch_body_text"><?php echo $get_in_touch_body_text; ?></p>
 		</section>
 
 
