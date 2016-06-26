@@ -7,9 +7,19 @@
  * @package ted_x
  */
 
+$category_news_header_headline = get_field('category_news_header_headline');
+$category_news_header_text = get_field('category_news_header_text');
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+
+		<header class="red-page-header">
+			<div class="red-page-header__line"></div>
+			<h2 class="red-page-header__headline"> HEader</h2>
+			<p class="red-page-header__text">Yo To To</p>
+		</header>
+
 		<main id="main" class="site-main" role="main">
 
 		<?php

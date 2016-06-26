@@ -94,22 +94,27 @@ $navigation__height: 90px;
 	}
 }
 
+.header-container {
+	width: 1180px;
+	height: 90px;
+	margin: auto;
+}
+
 .logo-image {
 	background-image: url(images/logo.svg);
 	height: 44px;
     width: 208px;
     float: left;
-    margin-left: 150px;
     margin-top: 25px;
 }
 
+.current-menu-item,
 .current_page_item {
 	background-color: $color__navigation__link-hover
 }
 
 .navigation-section {
 	float: right;
-	margin-right: 150px;
 }
 
 /* Small menu. */
