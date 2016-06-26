@@ -1,7 +1,8 @@
 .content-area {
 	width: 1180px;
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+  margin-top: 120px;
 }
 
 body {
@@ -10,4 +11,16 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: -30px 800px;
+}
+
+%red__box {
+	height: auto;
+	background-color: #ff2b06;
+	-webkit-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+    -moz-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+    box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+    position: relative;
+    width: 1180px;
+    text-align: left;
+    padding: 80px 0;
 }
