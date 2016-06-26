@@ -27,7 +27,7 @@ $post_link = get_field('post_link');
 		if ( 'post' === get_post_type() ) : ?>
 
 		<div class="post-teaser">
-			<a href="<?php echo $post_link; ?>">
+			<a class="post-teaser-link" href="<?php echo $post_link; ?>">
 				<img class="post-teaser-img" src="<?php echo $post_image['url']; ?>">
 			</a>
 			<div class="post-teaser-text">
