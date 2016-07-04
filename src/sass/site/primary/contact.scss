@@ -1,9 +1,94 @@
 .page-template-custom-contact-page {
 	#content .entry-header {
-	display: none;
+	   display: none;
 	}
-} 
 
-.contact_intro {
-	@extend %red__box;
+	.red-page-header {
+	   padding-bottom: 45px;
+	}
+
+	.entry-content {
+	   margin: 0em 10em;
+	}
+
+	.locotweet-line {
+      position: relative;
+      height: 2px;
+      background-color: #ff2b06;
+      width: 62px;
+      top: 25px;
+      margin-left: 150px;
+	}
+
+	.send_us_a_message {
+	   text-align: left;
+	   margin: 0;
+       margin-left: 240px;
+	}
+}
+.contact_form {
+	
+	margin: 3em 0 0 10em;
+	
+	input {
+	border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #c3c3c3;
+    width: 700px;
+    border-radius: 0;
+    font-size: 22px;
+	}
+	span.your-message {
+	   background-color: rgb(166, 166, 166);
+  	   box-shadow: 0px 19px 0px 0px rgba(147, 147, 147, 0.004);
+	   /*width: 709px;
+	   height: 262px;*/
+	   z-index: 32;
+	   width: 700px;
+
+	  textarea {
+	   border: 0;
+	   padding: 20px;
+	   color: #ffffff;
+       border-radius: 0;
+       background-color: #a6a6a6;
+       width: 700px;
+       -webkit-box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
+       -moz-box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
+       box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
+       line-height: 1.4;
+	   }
+	   &
+	   textarea:hover,  
+	   textarea:active, 
+	   textarea:focus {
+	   outline:0px !important;
+	   -webkit-appearance:none;
+		}
+	}
+}
+input[type="submit"] {
+	background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0;
+    border: 1px solid #ff2b06;
+    padding: 12px 45px;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: bold;
+
+		&:hover {
+	    border: 1px solid #ff2b06;
+	    box-shadow: none;		
+	}	
+
+		&:hover {
+	    border: 1px solid #ff2b06;
+	    box-shadow: none;		
+	}	
+
 }

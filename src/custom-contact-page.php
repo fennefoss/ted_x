@@ -15,16 +15,19 @@
 get_header(); ?>
 
 	<?php
-		$get_in_touch_header = get_field('get_in_touch_header');
+		$get_in_touch_headline = get_field('get_in_touch_headline');
 		$get_in_touch_intro_p = get_field('get_in_touch_intro_p');
 		$get_in_touch_body_text = get_field('get_in_touch_body_text');
+		$send_us_a_message = get_field('send_us_a_message');
+		$contact_form = get_field('contact_form');
 	?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<section class="contact_intro">
-			<h2 class="get-in-touch-h2"><?php echo $get_in_touch_header; ?></h2>
-			<p class="get_in_touch_intro_p"><?php echo $get_in_touch_intro_p; ?></p>
+		<section class="red-page-header">
+			<div class="red-page-header__line"></div>
+			<h2 class="red-page-header__headline"><?php echo $get_in_touch_headline; ?></h2>
+			<p class="red-page-header__text"><?php echo $get_in_touch_intro_p; ?></p>
 		</section>
 		<section class="contact_container">
 			<p class="get_in_touch_body_text"><?php echo $get_in_touch_body_text; ?></p>
@@ -63,7 +66,9 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+		<div class="locotweet-line"></div>
+		<h2 class="send_us_a_message"><?php echo $send_us_a_message; ?></h2>
+		<div class="contact_form"><?php echo $contact_form; ?></div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
