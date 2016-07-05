@@ -160,3 +160,41 @@
 		top: -60px;
 	}
 }
+
+.speaker-page-container {
+
+	a:visited {
+		color: #ff2b06;
+	}
+
+	.entry-content {
+		height: 300px;
+    	top: 50%;
+    	transform: translateY(-50%);
+
+		img {
+			border-radius: 50%;
+			width: 300px;
+			height: 300px;
+			float: left;
+			margin-right: 60px;
+			margin-top: -150px;
+		}
+
+		p {
+			margin-top: 150px;
+		}
+	}
+
+	.category-speakers:nth-of-type(2) {
+		.entry-content {
+			text-align: right;
+
+			img {
+				float: right;
+				margin-right: 0;
+				margin-left: 60px;
+			}
+		}
+	}
+}

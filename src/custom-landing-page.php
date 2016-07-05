@@ -27,7 +27,12 @@ get_header(); ?>
 		$intro_text = get_field('intro_text');
 
 		// vars for locotweet
-		$locotweet_markup = get_field('locotweet_markup'); //make it a WYSIWYG editor for custom fields 
+		$locotweet_markup = get_field('locotweet_markup'); //make it a WYSIWYG editor for custom fields
+
+		//vars for
+		$show_all_news_link = get_field('show_all_news_link');
+		$show_all_news_link_text = get_field('show_all_news_link_text');
+		$show_all_news_header = get_field('show_all_news_header');
 	?>
 
 	<header class="video-container">
@@ -67,6 +72,14 @@ get_header(); ?>
 			<aside class="locotweet-x"></aside>
 		</section>
 
+		<section class="latest-news">
+			<h2 class="show-all-news__header"><?php echo $show_all_news_header; ?></h2>
+			<!--Super awesome snippet for showing the
+			posts from a certain category ID. Replace the
+			cat=ID with the number of the category wanted -->
+			<?php query_posts( 'cat=4' ); ?>
+		<section>
+
 		<?php
 		if ( have_posts() ) :
 
@@ -97,6 +110,11 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+
+		<button class="show-all-news">
+			<a class="show-all-news__link" href="<?php echo $show_all_news_link; ?>"><?php echo $show_all_news_link_text; ?></a>
+		</button>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
