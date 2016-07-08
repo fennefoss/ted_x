@@ -77,7 +77,7 @@ get_header(); ?>
 			<!--Super awesome snippet for showing the
 			posts from a certain category ID. Replace the
 			cat=ID with the number of the category wanted -->
-			<?php query_posts( 'cat=4' ); ?>
+			<?php query_posts('category_name=News'); ?>
 		<section>
 
 		<?php

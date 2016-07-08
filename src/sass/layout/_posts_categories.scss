@@ -91,6 +91,7 @@
 	.red-page-header__text {
 		text-align: left;
 		margin-left: 280px;
+		margin-right: 100px;
 		color: #fff;
 	}
 }
@@ -163,8 +164,29 @@
 
 .speaker-page-container {
 
+	hr {
+		background-color: #ff2b06;
+		height: 2px;
+	}
+
 	a:visited {
 		color: #ff2b06;
+	}
+
+	.entry-header {
+		margin-left: 360px;
+		
+		h2 {
+			text-align: left;
+			margin-bottom: 10px;
+		}
+
+		.speaker-title {
+			text-align: left;
+			margin: 0;
+			float: left;
+			margin-bottom: 15px;
+		}
 	}
 
 	.entry-content {
@@ -179,6 +201,10 @@
 			float: left;
 			margin-right: 60px;
 			margin-top: -150px;
+
+			&:hover {
+				opacity: 0.8;
+			}
 		}
 
 		p {
@@ -187,6 +213,21 @@
 	}
 
 	.category-speakers:nth-of-type(2) {
+
+		.entry-header {
+			margin-right: 360px;
+			margin-left: 0;
+
+			h2 {
+			text-align: right;
+			}
+
+			.speaker-title {
+				text-align: right;
+				float: right;
+			}
+		}
+
 		.entry-content {
 			text-align: right;
 
