@@ -6,11 +6,12 @@
 }
 
 body {
-   background: #ededed;
-   background-image: url('https://dl.dropboxusercontent.com/u/10313809/bg.svg');
+  background: url('images/background.svg') no-repeat; 
+  background-size: 100% 200%;
+   /*background: #ededed;
+   background-image: url('../../images/bg.svg');
    background-repeat: no-repeat;
-   background-size: cover;
-   background-position: -30px 800px;
+   background-size: cover;*/
 }
 
 %red__box {
