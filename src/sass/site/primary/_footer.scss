@@ -1,0 +1,57 @@
+.site-footer {
+
+	#main-footer{
+		// TODO: It might be a good idea to implement a fallback option?
+		background: $color__footer_background url("images/footer_illustration.svg") center bottom no-repeat;
+		// Define borders to avoid box model margin collapse (http://www.w3.org/TR/CSS21/box.html#collapsing-margins)
+		border-top: 1px solid $color__footer_border;
+		border-bottom: 1px solid $color__footer_border;
+		// Make sure there's room for the enitre background image
+		min-height: 200px;
+
+		.container {
+			// TODO: This should probably be a mixin that we can use in the main .content-area
+			width: 1180px;
+			margin: 0 auto;
+
+			.newsletter{
+
+			}
+
+			.navigation{
+
+			}
+
+			.social-media{
+
+			}
+		}
+	}
+
+	#sub-footer{
+		// Set a slightly darker background color
+		background-color: darken($color__footer_background, 5);
+
+		.container {
+			// TODO: Again with the fucking mixin, amirite?
+			width: 1180px;
+			margin: 0 auto;
+
+			.copyright-notice {
+				margin: 0;
+				padding: 24px 0;
+				font: 300 12px/16px $font__main;
+				color: gray;
+
+				a {
+					color: $color__text-grey;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+}
