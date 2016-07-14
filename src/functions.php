@@ -108,6 +108,24 @@ function ted_x_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Left', 'ted_x' ),
+		'id'            => 'footer-left',
+		'description'   => esc_html__( 'Add widgets to the main footer area here.', 'ted_x' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Right', 'ted_x' ),
+		'id'            => 'footer-right',
+		'description'   => esc_html__( 'Add widgets to the right hand footer area here.', 'ted_x' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'ted_x_widgets_init' );
 

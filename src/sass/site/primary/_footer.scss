@@ -15,6 +15,13 @@
 		width: 25%;
 	}
 
+	// Widget formatting
+	.widget-title {
+		text-align: left;
+		font: 200 32px/32px $font__main;
+		color: $color__text--red;
+	}
+
 	#main-footer{
 		// TODO: It might be a good idea to implement a fallback option?
 		background: $color__footer_background url("images/footer_illustration.svg") center bottom no-repeat;
@@ -24,15 +31,8 @@
 		// Make sure there's room for the enitre background image
 		min-height: 200px;
 
-		.newsletter{
-			.signup-heading {
-				text-align: left;
-				font: 200 32px/32px $font__main;
-				color: $color__text--red;
-			}
-		}
 
-		.navigation{
+		nav {
 			ul {
 				margin: 0;
 				padding-left: 0;
@@ -78,9 +78,6 @@
 
 		}
 
-		.social-media{
-
-		}
 	}
 
 	#sub-footer{

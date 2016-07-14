@@ -17,18 +17,20 @@
 		<section id="main-footer">
 			<div class="center">
 				<div class="column-left">
-					<div class="newsletter">
-						<h3 class="signup-heading">Newsletter Signup</h3>
-						<?php // TODO: Add hardcoded newsletter signup form? ?>
-					</div><!-- .newsletter -->
-					<div class="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
-					</div><!-- .navigation -->
+
+					<?php dynamic_sidebar( 'footer-left' ); ?>
+
+					<?php wp_nav_menu( array(
+						'theme_location' => 'footer',
+						'fallback_cb' => false,
+						'container' => 'nav',
+					) ); ?>
+
 				</div><!-- .column-left -->
 				<div class="column-right">
-					<div class="social-media">
 
-					</div><!-- .social-media -->
+					<?php dynamic_sidebar( 'footer-right' ); ?>
+
 				</div><!-- .column-right -->
 			</div><!-- .center -->
 		</section><!-- #main-footer -->
