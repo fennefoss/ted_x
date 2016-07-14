@@ -18,7 +18,8 @@
 			<div class="center">
 				<div class="column-left">
 					<div class="newsletter">
-
+						<h3 class="signup-heading">Newsletter Signup</h3>
+						<?php // TODO: Add hardcoded newsletter signup form? ?>
 					</div><!-- .newsletter -->
 					<div class="navigation">
 

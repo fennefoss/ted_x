@@ -25,7 +25,11 @@
 		min-height: 200px;
 
 		.newsletter{
-
+			.signup-heading {
+				text-align: left;
+				font: 200 32px/32px $font__main;
+				color: $color__text--red;
+			}
 		}
 
 		.navigation{
