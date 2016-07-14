@@ -33,6 +33,48 @@
 		}
 
 		.navigation{
+			ul {
+				margin: 0;
+				padding-left: 0;
+				list-style-type: none;
+			}
+
+			li {
+				float: left;
+				font: 300 14px/24px $font__main;
+				text-transform: uppercase;
+				// Insert a vertical line (U+007C) wrapped in non-breaking spaces (U+00A0) after each menu item
+				&::after {
+					padding: 0 6px;
+					content: '\a0\7c\a0';
+					color: lighten($color__footer_links, 25);
+				}
+				&:last-child::after {
+					content: '';
+				}
+			}
+
+			a {
+				color: $color__footer_links;
+				text-decoration: none;
+
+				&:hover,
+				&.focus {
+					color: darken($color__footer_links, 25);
+					text-decoration: underline;
+				}
+			}
+
+			.current_page_item,
+			.current-menu-item,
+			.current_page_ancestor,
+			.current-menu-ancestor {
+				// Avoid applying the red background rule from main navigation menu
+				background-color: transparent;
+				& > a {
+					color: darken($color__footer_links, 25);
+				}
+			}
 
 		}
 

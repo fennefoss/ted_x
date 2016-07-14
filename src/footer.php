@@ -22,7 +22,7 @@
 						<?php // TODO: Add hardcoded newsletter signup form? ?>
 					</div><!-- .newsletter -->
 					<div class="navigation">
-
+						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
 					</div><!-- .navigation -->
 				</div><!-- .column-left -->
 				<div class="column-right">
