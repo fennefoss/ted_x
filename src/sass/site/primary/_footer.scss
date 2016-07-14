@@ -1,9 +1,9 @@
 .site-footer {
-	// General purpose centering div thingy
+	// General purpose centering and columnn rules
 	.center {
 		max-width: 1180px;
 		margin: 0 auto;
-		overflow: hidden;
+		overflow: auto;
 	}
 	.column-left {
 		float: left;
@@ -16,32 +16,40 @@
 	}
 
 	// Widget formatting
+	.widget {
+		margin: $margin__footer_widget;
+	}
 	.widget-title {
 		text-align: left;
-		font: 200 32px/32px $font__main;
+		font: 200 32px $font__main;
 		color: $color__text--red;
 	}
+}
 
-	#main-footer{
-		// TODO: It might be a good idea to implement a fallback option?
-		background: $color__footer_background url("images/footer_illustration.svg") center bottom no-repeat;
-		// Define borders to avoid box model margin collapse (http://www.w3.org/TR/CSS21/box.html#collapsing-margins)
-		border-top: 1px solid $color__footer_border;
-		border-bottom: 1px solid $color__footer_border;
-		// Make sure there's room for the enitre background image
-		min-height: 200px;
+#main-footer {
+	// TODO: It might be a good idea to implement a fallback option?
+	background: $color__footer_background url("images/footer_illustration.svg") center bottom no-repeat;
+	// Define borders to avoid box model margin collapse (http://www.w3.org/TR/CSS21/box.html#collapsing-margins)
+	border-top: 1px solid $color__footer_border;
+	border-bottom: 1px solid $color__footer_border;
+	// Make sure there's room for the enitre background image
+	min-height: 200px;
 
+	p { // Make sure all footer paragraphs have font-size 16px
+		@include font-size(1);
+	}
 
-		nav {
-			ul {
-				margin: 0;
-				padding-left: 0;
-				list-style-type: none;
-			}
+	nav {
+		margin: $margin__footer_widget;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
 
 			li {
-				float: left;
-				font: 300 14px/24px $font__main;
+				display: inline;
+				font: 300 14px $font__main;
 				text-transform: uppercase;
 				// Insert a vertical line (U+007C) wrapped in non-breaking spaces (U+00A0) after each menu item
 				&::after {
@@ -57,47 +65,44 @@
 			a {
 				color: $color__footer_links;
 				text-decoration: none;
-
 				&:hover,
 				&.focus {
 					color: darken($color__footer_links, 25);
 					text-decoration: underline;
 				}
 			}
-
-			.current_page_item,
-			.current-menu-item,
-			.current_page_ancestor,
-			.current-menu-ancestor {
-				// Avoid applying the red background rule from main navigation menu
-				background-color: transparent;
-				& > a {
-					color: darken($color__footer_links, 25);
-				}
-			}
-
 		}
 
-	}
-
-	#sub-footer{
-		// Set a slightly darker background color
-		background-color: darken($color__footer_background, 5);
-
-		.copyright-notice {
-			margin: 0;
-			padding: 24px 0;
-			font: 300 12px/16px $font__main;
-			color: gray;
-
-			a {
-				color: $color__text-grey;
-				text-decoration: none;
-				&:hover {
-					text-decoration: underline;
-				}
+		.current_page_item,
+		.current-menu-item,
+		.current_page_ancestor,
+		.current-menu-ancestor {
+			// Avoid applying the red background rule from main navigation menu
+			background-color: transparent;
+			& > a {
+				color: darken($color__footer_links, 25);
 			}
 		}
 	}
 
+}
+
+#sub-footer {
+	// Set a slightly darker background color
+	background-color: darken($color__footer_background, 5);
+
+	.copyright-notice {
+		margin: 0;
+		padding: 24px 0;
+		font: 300 12px/16px $font__main;
+		color: gray;
+
+		a {
+			color: $color__text-grey;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }
