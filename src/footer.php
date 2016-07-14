@@ -15,25 +15,29 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<section id="main-footer">
-			<div class="container">
-				<div class="newsletter">
+			<div class="center">
+				<div class="column-left">
+					<div class="newsletter">
 
-				</div><!-- .newsletter -->
-				<div class="navigation">
+					</div><!-- .newsletter -->
+					<div class="navigation">
 
-				</div><!-- .navigation -->
-				<div class="social-media">
+					</div><!-- .navigation -->
+				</div><!-- .column-left -->
+				<div class="column-right">
+					<div class="social-media">
 
-				</div><!-- .social-media -->
-			</div><!-- .container -->
+					</div><!-- .social-media -->
+				</div><!-- .column-right -->
+			</div><!-- .center -->
 		</section><!-- #main-footer -->
 		<section id="sub-footer">
-			<div class="container">
+			<div class="center">
 				<p class="copyright-notice">
 					<?php printf( esc_html( 'This independent TEDx event is operated under license from %s.', 'ted_x' ), '<a href="https://www.ted.com/">TED</a>' ); ?><br>
 					<?php printf( esc_html( 'Copyright &copy; %s TEDxAarhus', 'ted_x' ), date( 'Y' ) ); ?>
 				</p>
-			</div><!-- .container -->
+			</div><!-- .center -->
 		</section><!-- #sub-footer -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
