@@ -49,6 +49,7 @@ gulp.task('clean', function(cb) {
 // Process styling and minify
 gulp.task('styles', function() {
 	return gulp.src(project.styles)
+	.pipe(sourcemaps.init())
 	.pipe(plumber())
 	.pipe(sass({
 		errLogToConsole: true,
@@ -58,6 +59,7 @@ gulp.task('styles', function() {
 		browsers: ['last 3 versions'],
 		cascade: false
 		}))
+	.pipe(gulpif(debug, sourcemaps.write({ sourceRoot: 'src/sass/' })))
 	.pipe(gulp.dest(project.build));
 	});
 
