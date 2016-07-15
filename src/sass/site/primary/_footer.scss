@@ -30,8 +30,7 @@
 }
 
 #main-footer {
-	// TODO: It might be a good idea to implement a fallback option?
-	background: $color__footer_background url("images/footer_illustration.svg") center bottom no-repeat;
+	background: $color__footer_background url("images/footer_illustration.png") center bottom no-repeat;
 	// Define borders to avoid box model margin collapse (http://www.w3.org/TR/CSS21/box.html#collapsing-margins)
 	border-top: 1px solid $color__footer_border;
 	border-bottom: 1px solid $color__footer_border;
