@@ -3,7 +3,10 @@
 	.center {
 		max-width: 1180px;
 		margin: 0 auto;
-		overflow: auto;
+	}
+	.center:after {
+		@include clearfix;
+		@include clearfix-after;
 	}
 	.column-left {
 		float: left;
