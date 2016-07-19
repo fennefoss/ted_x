@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url('images/background.svg') no-repeat; 
+  background: url('images/background.svg') #EDEDED no-repeat; 
   background-size: 100% 200%;
    /*background: #ededed;
    background-image: url('../../images/bg.svg');
@@ -43,4 +43,8 @@ body {
   &:active {
     outline: 0;
   }
+}
+
+.site-info {
+  display: none;
 }
