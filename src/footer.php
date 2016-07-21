@@ -14,11 +14,34 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ted_x' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ted_x' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ted_x' ), 'ted_x', '<a href="http://underscores.me/" rel="designer">TEDx Aarhus</a>' ); ?>
-		</div><!-- .site-info -->
+		<section id="main-footer">
+			<div class="center">
+				<div class="column-left">
+
+					<?php dynamic_sidebar( 'footer-left' ); ?>
+
+					<?php wp_nav_menu( array(
+						'theme_location' => 'footer',
+						'fallback_cb' => false,
+						'container' => 'nav',
+					) ); ?>
+
+				</div><!-- .column-left -->
+				<div class="column-right">
+
+					<?php dynamic_sidebar( 'footer-right' ); ?>
+
+				</div><!-- .column-right -->
+			</div><!-- .center -->
+		</section><!-- #main-footer -->
+		<section id="sub-footer">
+			<div class="center">
+				<p class="copyright-notice">
+					<?php printf( esc_html( 'This independent TEDx event is operated under license from %s.', 'ted_x' ), '<a href="https://www.ted.com/">TED</a>' ); ?><br>
+					<?php printf( esc_html( 'Copyright &copy; %s TEDxAarhus', 'ted_x' ), date( 'Y' ) ); ?>
+				</p>
+			</div><!-- .center -->
+		</section><!-- #sub-footer -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
