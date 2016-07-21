@@ -85,13 +85,15 @@
 		text-align: left;
 		position: absolute;
     	top: 22px;
-    	left: 275px;
+    	left: 245px;
 	}
 
 	.red-page-header__text {
 		text-align: left;
-		margin-left: 280px;
+		margin-left: 245px;
 		color: #fff;
+		width: 750px;
+		font-weight: $light;
 	}
 }
 

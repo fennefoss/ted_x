@@ -85,6 +85,10 @@ $navigation__height: 90px;
 			color: $color__navigation__link;
 		}
 
+		&:hover {
+			color: #c3c3c3;
+		}
+
 	}
 
 	.current_page_item > a,

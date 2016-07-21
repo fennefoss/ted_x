@@ -1,0 +1,72 @@
+.page-template-custom-meettheteam-page {
+	background-size: 100% 140%;
+
+	#content .entry-header {
+	   display: none;
+	}
+
+	.red-page-header {
+		padding-bottom: 45px;
+
+		p {
+			color: white;
+			margin: 30px 150px 0 150px;
+		}
+	}
+
+	.meettheteam_container {
+			margin: 0em 10em;
+			text-align: left;
+		
+		.locotweet-line {
+			background-color: #ff2b06;
+			text-align: left;
+			position: relative;
+			margin-left: 0;
+			top: 85px;
+		}
+
+		h2 {
+			text-align: left;
+			top: 25px;
+    		left: 90px;
+    		position: relative;
+
+    			&.meettheteam_company_headline {
+    				width: 650px;
+    			}
+
+    			&.meettheteam_TEDxAarhusLive2016_headline {
+    				margin-bottom: 45px;
+
+    			}
+		}
+
+		a {
+			color: #ff2b06;
+    		text-decoration: none;
+			
+			&:hover {
+				color: #7d1300;
+			}
+			&:visited {
+				color: #ff2b06;
+			}
+		}
+		.meettheteam_imgs {
+		    width: 1500px;
+		    overflow: visible;
+
+		    img {
+		    	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    			filter: grayscale(100%);
+    			margin-right: 65px;
+		    }
+
+		    p.img:last-child {
+		    	margin-right: 0;
+		    }
+		}
+    			
+	}
+}

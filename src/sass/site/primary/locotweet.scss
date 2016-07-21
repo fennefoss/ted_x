@@ -1,10 +1,22 @@
 .fts-tweeter-wrap {
 	display: none;
+
+    .tweeter-info {
+        border-bottom: none;
+
+        span.fts-twitter-text {
+            color: white;
+        }
+    }
 }
 
 .fts-tweeter-wrap.js-active-tweet {
 	display: block;
 	float: left;
+}
+
+.fts-twitter-reply-wrap {
+    display: none;
 }
 
 .locotweet-container {
@@ -20,6 +32,7 @@
 	position: absolute;
 	color: #7d1300;
 	margin-left: 235px;
+    top: 35px;
 }
 
 .locotweet-line {
@@ -27,7 +40,7 @@
     height: 2px;
     background-color: #7d1300;
     width: 62px;
-    top: 55px;
+    top: 92px;
     margin-left: 150px;
 }
 
@@ -35,7 +48,7 @@
 	width: 60px;
 	height: 100%;
 	float: left;
-	margin-top: 130px;
+	margin-top: 162px;
 	margin-left: 100px;
 
 	button {
@@ -89,18 +102,19 @@
 
 .locotweet-follow {
 	background-image: url(images/twitterbird.svg) !important;
-    margin-top: 60px;
+    margin-top: 10px;
     background-color: #3ca0e0;
     box-shadow: none;
-    border-color: none;
+    border:0;
     color: #fff;
     font-weight: bold;
     width: 250px;
     font-size: 16px;
     text-shadow: none;
     background-repeat: no-repeat;
-    background-position: 20px 7px;
+    background-position: 20px 9px;
     padding-left: 55px;
+    padding-bottom: 10px;
 
     &:hover {
     	box-shadow: none;
