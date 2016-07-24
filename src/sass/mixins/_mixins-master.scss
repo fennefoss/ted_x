@@ -24,10 +24,14 @@
 }
 
 // Insert a red line before hedings
-@mixin redline($lineLength: 90px, $lineDistance: 20px, $lineWidth: 2px) {
+@mixin redline($lineLength: 90px, $lineDistance: 20px, $lineWidth: 2px, $indent: true) {
 	color: $color__text-red;
 	font-weight: $light;
-	margin-left: $lineLength + $lineDistance;
+	// This defaults to true, unless a false $indent var is passed
+	@if $indent {
+		margin-left: $lineLength + $lineDistance;
+	}
+	// Apply .left or .right to elements to align text
 	&.left {
 		text-align: left;
 	}
