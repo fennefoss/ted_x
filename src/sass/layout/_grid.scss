@@ -6,12 +6,7 @@
 }
 
 body {
-  background: url('images/background.svg') #EDEDED no-repeat; 
-  background-size: 100% 200%;
-   /*background: #ededed;
-   background-image: url('../../images/bg.svg');
-   background-repeat: no-repeat;
-   background-size: cover;*/
+	background: #ededed url('images/background.svg') 100%/100% no-repeat;
 }
 
 %red__box {
