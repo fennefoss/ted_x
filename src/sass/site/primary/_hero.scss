@@ -1,0 +1,31 @@
+.hero-unit {
+	// General purpose centering and columnn rules
+	.center {
+		max-width: 1180px;
+		padding-top: 32px;
+		@include center-block;
+	}
+
+	.quote p,
+	.quote h1,
+	.quote h2 {
+		font-size: $font__size-h2;
+		@include redline(1.5em, 0.5em);
+	}
+
+	.infobox {
+		@include infobox(#959595);
+	}
+}
+
+.hero-unit.about-us {
+	margin-top: 90px;
+	min-height: 630px; // Set height to the size of the background image
+	background: #e0e0e0 url(images/about_top.jpg) 75% no-repeat;
+}
+
+.hero-unit.press {
+	margin-top: 90px;
+	min-height: 562px; // Set height to the size of the background image
+	background: #e0e0e0 url(images/press_top.jpg) 75% no-repeat;
+}

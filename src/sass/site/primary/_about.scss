@@ -1,0 +1,34 @@
+.page-template-custom-about-us-page article {
+	// Set the same margin as found on the Team and Contact pages
+	margin: 4em 10em;
+
+	h1, h2, h3 {
+		font-size: $font__size-h2;
+		font-weight: $light;
+		text-align: left;
+		// Import the redline mixin without indentation
+		@include redline($indent: false);
+	}
+
+	.red-frame-box {
+		float: right;
+		margin: 1em 0 1em 2em;
+		padding: 1em 3em;
+		max-width: 400px;
+		border: 5px solid $color__text--red;
+
+		p {
+			font-size: 16px;
+		}
+
+		.red {
+			color: $color__text--red;
+		}
+		.bold {
+			font-weight: 600;
+		}
+		.light {
+			font-weight: 200;
+		}
+	}
+}
