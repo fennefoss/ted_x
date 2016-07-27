@@ -40,16 +40,16 @@ class SoMe_Widget extends WP_Widget {
 		$url_snapchat  = isset( $instance['url_snapchat'] ) ? $instance['url_snapchat'] : false;
 
 		$icons = array(
-			'Facebook'  => $instance['url_facebook'],
-			'Twitter'   => $instance['url_twitter'],
-			'YouTube'   => $instance['url_youtube'],
-			'Snapchat'  => $instance['url_snapchat'],
+			'facebook'  => $instance['url_facebook'],
+			'twitter'   => $instance['url_twitter'],
+			'youtube'   => $instance['url_youtube'],
+			'snapchat'  => $instance['url_snapchat'],
 		);
 
 		// Iterate SoMe profiles and add markup for an icon if URL has been set
 		foreach ($icons as $service => $url) {
 			if ( $url ) {
-				$markup .= sprintf( '<a class="social-media-icon %1$s" href="%2$s">%1$s</a>', $service, $url );
+				$markup .= sprintf( '<a class="social-media-icon %1$s" href="%2$s" target="_blank"></a>', $service, $url );
 			}
 		}
 
