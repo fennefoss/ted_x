@@ -23,7 +23,7 @@
 		}
 		// Override SVG fill color with highlighted color on mouse hover
 		svg:hover path {
-			fill: lighten($color__footer_links, 25) !important;
+			fill: darken($color__footer_links, 25) !important;
 		}
 	}
 }
