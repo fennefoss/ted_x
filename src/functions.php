@@ -126,6 +126,8 @@ function ted_x_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	// Load the Social Media Icons widget
+	register_widget( 'SoMe_Widget' );
 }
 add_action( 'widgets_init', 'ted_x_widgets_init' );
 
@@ -169,3 +171,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Widget class files.
+ */
+require get_template_directory() . '/inc/widgets.php';
