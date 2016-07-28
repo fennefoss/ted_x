@@ -22,10 +22,12 @@
 		margin-left: 150px;
 	}
 
-	.send_us_a_message {
+	h1, h2, h3 {
+		font-size: $font__size-h2;
+		font-weight: $light;
 		text-align: left;
-		margin: 0;
-		margin-left: 240px;
+		// Import the redline mixin without indentation
+		@include redline($indent: false);
 	}
 }
 .contact_form {
