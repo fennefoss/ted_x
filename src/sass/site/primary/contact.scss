@@ -78,8 +78,10 @@ input[type="submit"] {
 	padding: 12px 45px;
 	transition: all 0.3s ease 0s;
 	text-transform: uppercase;
-	font-size: 0.75rem;
-	line-height: 1;
+	color: #ff2b06;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	letter-spacing: 0.125em;
 	font-weight: bold;
 
 	&:hover {
