@@ -30,10 +30,8 @@
 		@include redline($indent: false);
 	}
 }
-.contact_form {
 
-	margin: 3em 0 0 10em;
-
+.page-template-custom-contact-page form {
 	input {
 		border: 0;
 		outline: 0;
@@ -69,30 +67,30 @@
 		outline:0px !important;
 		-webkit-appearance:none;
 	}
-}
 
-input[type="submit"] {
-	background: transparent;
-	box-shadow: none;
-	text-shadow: none;
-	border-radius: 0;
-	border: 1px solid #ff2b06;
-	padding: 12px 45px;
-	transition: all 0.3s ease 0s;
-	text-transform: uppercase;
-	color: #ff2b06;
-	font-size: 1.25rem;
-	line-height: 1.5;
-	letter-spacing: 0.125em;
-	font-weight: bold;
-
-	&:hover {
+	input[type="submit"] {
+		background: transparent;
+		box-shadow: none;
+		text-shadow: none;
+		border-radius: 0;
 		border: 1px solid #ff2b06;
-		box-shadow: none;
-		background-color: #ff2b06;
-		border-color: #ff2b06;
-		box-shadow: none;
-		color: #ffffff;
+		padding: 12px 45px;
+		transition: all 0.3s ease 0s;
+		text-transform: uppercase;
+		color: #ff2b06;
+		font-size: 1.25rem;
+		line-height: 1.5;
+		letter-spacing: 0.125em;
+		font-weight: bold;
+
+		&:hover {
+			border: 1px solid #ff2b06;
+			box-shadow: none;
+			background-color: #ff2b06;
+			border-color: #ff2b06;
+			box-shadow: none;
+			color: #ffffff;
+		}
 	}
 }
 
