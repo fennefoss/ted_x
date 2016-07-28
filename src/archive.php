@@ -57,5 +57,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
