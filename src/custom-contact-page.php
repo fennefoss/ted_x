@@ -18,9 +18,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="red-page-header">
-				<div class="red-page-header__line"></div>
-				<h2 class="red-page-header__headline"><?php the_field('get_in_touch_headline'); ?></h2>
-				<p class="red-page-header__text"><?php the_field('get_in_touch_intro_p'); ?></p>
+				<h2><?php the_field('get_in_touch_headline'); ?></h2>
+				<p><?php the_field('get_in_touch_intro_p'); ?></p>
 			</section>
 
 			<?php

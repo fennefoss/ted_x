@@ -1,36 +1,43 @@
 .page-template-custom-contact-page {
-	background-size: 100% 100%;
 
-	#content .entry-header {
+	// Hide the built-in WordPress page heading
+	.entry-header {
 		display: none;
 	}
 
+	// Styles for the red box
 	.red-page-header {
-		padding-bottom: 45px;
+		padding: 60px 10em;
+		margin-bottom: 100px;
+		// Use the redline mixin with a custom color
+		h1, h2, h3 {
+			font-size: $font__size-h2;
+			font-weight: $light;
+			text-align: left;
+			@include redline($color: #7d1300);
+		}
+		p {
+			color: #fff;
+			max-width: 700px;
+			font-weight: 100;
+		}
 	}
 
+	// Styles for the actual page content
 	.entry-content {
 		margin: 0em 10em;
-	}
 
-	.locotweet-line {
-		position: relative;
-		height: 2px;
-		background-color: #ff2b06;
-		width: 62px;
-		top: 25px;
-		margin-left: 150px;
-	}
-
-	h1, h2, h3 {
-		font-size: $font__size-h2;
-		font-weight: $light;
-		text-align: left;
-		// Import the redline mixin
-		@include redline();
+		h1, h2, h3 {
+			font-size: $font__size-h2;
+			font-weight: $light;
+			text-align: left;
+			// Import the redline mixin
+			@include redline();
+		}
 	}
 }
 
+// Styles for the contact form and its elements
 .page-template-custom-contact-page form {
 	input {
 		border: 0;
@@ -94,6 +101,7 @@
 	}
 }
 
+// Styles for the confirmation message
 div.wpcf7-mail-sent-ok {
 	color: #398f14;
 	font-weight: 300;
