@@ -167,3 +167,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Widget class files.
  */
 require get_template_directory() . '/inc/widgets.php';
+
+/**
+ * Define big thumbnail size for the Team Members page
+ */
+add_image_size( 'custom-team-member-big' , 430, 286, true );

@@ -28,12 +28,45 @@
 	.meettheteam_container {
 		margin: 0em 10em;
 
-		h1, h2, h3 {
-			font-size: $font__size-h2;
-			font-weight: $light;
+		h1, h2, h3, h4, h5 {
 			text-align: left;
-			// Import the redline mixin
-			@include redline();
 		}
+	}
+
+	.team-list {
+		// Remove grey bottom border from each item
+		> div {
+			border: none;
+			display: flex;
+			align-items: center;
+
+			.team-member-info {
+				float: left;
+				width: 50%;
+				margin-right: 2.5%;
+				text-align: center;
+			}
+			.team-member-des {
+				float: left;
+				width: 47.5%;
+			}
+		}
+
+		p {
+			@include font-size(0.9);
+			text-align: justify;
+		}
+
+	}
+}
+
+// Styles for single team member pages
+.single-team_manager {
+	h1, h2, h3 {
+		font-size: $font__size-h2;
+		font-weight: $light;
+		text-align: left;
+		// Import the redline mixin
+		@include redline();
 	}
 }
