@@ -6,3 +6,24 @@
 		max-width: 100%;
 	}
 }
+
+.social-media-icons {
+	// Styles for each individual icon
+	.social-media-icon {
+		display: inline-block;
+		margin-right: 10px;
+		// Make sure all icons are the same size
+		svg {
+			width: 48px;
+			height: 48px;
+		}
+		// Override SVG fill color with the prefered link color
+		svg path {
+			fill: $color__footer_links !important;
+		}
+		// Override SVG fill color with highlighted color on mouse hover
+		svg:hover path {
+			fill: darken($color__footer_links, 25) !important;
+		}
+	}
+}

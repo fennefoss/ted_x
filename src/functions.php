@@ -45,6 +45,7 @@ function ted_x_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'ted_x' ),
+		'footer'  => esc_html__( 'Footer', 'ted_x' ),
 	) );
 
 	/*
@@ -99,14 +100,25 @@ add_action( 'after_setup_theme', 'ted_x_content_width', 0 );
  */
 function ted_x_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'ted_x' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'ted_x' ),
+		'name'          => esc_html__( 'Footer Left', 'ted_x' ),
+		'id'            => 'footer-left',
+		'description'   => esc_html__( 'Add widgets to the main footer area here.', 'ted_x' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Right', 'ted_x' ),
+		'id'            => 'footer-right',
+		'description'   => esc_html__( 'Add widgets to the right hand footer area here.', 'ted_x' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// Load the Social Media Icons widget
+	register_widget( 'SoMe_Widget' );
 }
 add_action( 'widgets_init', 'ted_x_widgets_init' );
 
@@ -150,3 +162,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Widget class files.
+ */
+require get_template_directory() . '/inc/widgets.php';

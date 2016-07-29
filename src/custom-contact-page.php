@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * Template Name: Custom Contact Page
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -14,11 +14,29 @@
 
 get_header(); ?>
 
+	<?php
+		$get_in_touch_headline = get_field('get_in_touch_headline');
+		$get_in_touch_intro_p = get_field('get_in_touch_intro_p');
+		$get_in_touch_body_text = get_field('get_in_touch_body_text');
+		$send_us_a_message = get_field('send_us_a_message');
+		$contact_form = get_field('contact_form');
+	?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<section class="red-page-header">
+			<div class="red-page-header__line"></div>
+			<h2 class="red-page-header__headline"><?php echo $get_in_touch_headline; ?></h2>
+			<p class="red-page-header__text"><?php echo $get_in_touch_intro_p; ?></p>
+		</section>
+		<section class="contact_container">
+			<p class="get_in_touch_body_text"><?php echo $get_in_touch_body_text; ?></p>
+		</section>
+
+
+
 
 		<?php
-
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
@@ -48,7 +66,9 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+		<div class="locotweet-line"></div>
+		<h2 class="send_us_a_message"><?php echo $send_us_a_message; ?></h2>
+		<div class="contact_form"><?php echo $contact_form; ?></div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

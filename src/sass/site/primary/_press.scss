@@ -1,0 +1,18 @@
+.page-template-custom-press-page article {
+	// Set the same margin as found on the Team and Contact pages
+	margin: 4em 10em;
+
+	h1, h2 {
+		font-size: $font__size-h2;
+		font-weight: $light;
+		text-align: left;
+		margin-top: 2em;
+		// Import the redline mixin without indentation
+		@include redline($indent: false);
+	}
+
+	h3 {
+		text-align: left;
+	}
+
+}
