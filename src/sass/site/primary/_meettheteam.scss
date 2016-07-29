@@ -1,72 +1,39 @@
 .page-template-custom-meettheteam-page {
-	background-size: 100% 140%;
 
-	#content .entry-header {
-	   display: none;
+	// Hide the built-in WordPress page heading
+	.entry-header {
+		display: none;
 	}
 
+	// Styles for the red box
 	.red-page-header {
-		padding-bottom: 45px;
-
+		padding: 60px 10em;
+		margin-bottom: 100px;
+		// Use the redline mixin with a custom color
+		h1, h2, h3 {
+			font-size: $font__size-h2;
+			font-weight: $light;
+			text-align: left;
+			@include redline($color: #7d1300);
+		}
 		p {
-			color: white;
-			margin: 30px 150px 0 150px;
+			color: #fff;
+			max-width: 700px;
+			font-weight: 100;
 		}
 	}
 
+	// Styles for the actual page content
+	.entry-content,
 	.meettheteam_container {
-			margin: 0em 10em;
+		margin: 0em 10em;
+
+		h1, h2, h3 {
+			font-size: $font__size-h2;
+			font-weight: $light;
 			text-align: left;
-		
-		.locotweet-line {
-			background-color: #ff2b06;
-			text-align: left;
-			position: relative;
-			margin-left: 0;
-			top: 85px;
+			// Import the redline mixin
+			@include redline();
 		}
-
-		h2 {
-			text-align: left;
-			top: 25px;
-    		left: 90px;
-    		position: relative;
-
-    			&.meettheteam_company_headline {
-    				width: 650px;
-    			}
-
-    			&.meettheteam_TEDxAarhusLive2016_headline {
-    				margin-bottom: 45px;
-
-    			}
-		}
-
-		a {
-			color: #ff2b06;
-    		text-decoration: none;
-			
-			&:hover {
-				color: #7d1300;
-			}
-			&:visited {
-				color: #ff2b06;
-			}
-		}
-		.meettheteam_imgs {
-		    width: 1500px;
-		    overflow: visible;
-
-		    img {
-		    	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    			filter: grayscale(100%);
-    			margin-right: 65px;
-		    }
-
-		    p.img:last-child {
-		    	margin-right: 0;
-		    }
-		}
-    			
 	}
 }
