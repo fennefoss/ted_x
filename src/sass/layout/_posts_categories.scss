@@ -90,6 +90,7 @@
 
 	.red-page-header__text {
 		text-align: left;
+		margin-right: 100px;
 		margin-left: 245px;
 		color: #fff;
 		width: 750px;
@@ -160,5 +161,83 @@
 	.latest-news {
 		position: relative;
 		top: -60px;
+	}
+}
+
+.speaker-page-container {
+
+	hr {
+		background-color: #ff2b06;
+		height: 2px;
+	}
+
+	a:visited {
+		color: #ff2b06;
+	}
+
+	.entry-header {
+		margin-left: 360px;
+		
+		h2 {
+			text-align: left;
+			margin-bottom: 10px;
+		}
+
+		.speaker-title {
+			text-align: left;
+			margin: 0;
+			float: left;
+			margin-bottom: 15px;
+		}
+	}
+
+	.entry-content {
+		height: 300px;
+    	top: 50%;
+    	transform: translateY(-50%);
+
+		img {
+			border-radius: 50%;
+			width: 300px;
+			height: 300px;
+			float: left;
+			margin-right: 60px;
+			margin-top: -150px;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		p {
+			margin-top: 150px;
+		}
+	}
+
+	.category-speakers:nth-of-type(2) {
+
+		.entry-header {
+			margin-right: 360px;
+			margin-left: 0;
+
+			h2 {
+			text-align: right;
+			}
+
+			.speaker-title {
+				text-align: right;
+				float: right;
+			}
+		}
+
+		.entry-content {
+			text-align: right;
+
+			img {
+				float: right;
+				margin-right: 0;
+				margin-left: 60px;
+			}
+		}
 	}
 }

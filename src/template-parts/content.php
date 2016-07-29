@@ -11,6 +11,7 @@ $post_image = get_field('post_image');
 $post_header = get_field('post_header');
 $post_text = get_field('post_text');
 $post_link = get_field('post_link');
+$speaker_title = get_field('speaker_title');
 
 ?>
 
@@ -25,6 +26,11 @@ $post_link = get_field('post_link');
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
+
+		<h3 class="speaker-title">
+			<?php echo $speaker_title; ?>
+			<?php the_field('speaker_title', get_option('page_for_posts')); ?>
+		</h3>
 
 		<div class="post-teaser">
 			<a class="post-teaser-link" href="<?php echo $post_link; ?>">
