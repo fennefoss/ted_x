@@ -24,8 +24,8 @@
 }
 
 // Insert a red line before hedings
-@mixin redline($lineLength: 90px, $lineDistance: 20px, $lineWidth: 2px, $indent: true) {
-	color: $color__text-red;
+@mixin redline($lineLength: 90px, $lineDistance: 20px, $lineWidth: 2px, $color: $color__text--red, $indent: false) {
+	color: $color;
 	font-weight: $light;
 	// This defaults to true, unless a false $indent var is passed
 	@if $indent {
@@ -41,7 +41,7 @@
 	// This is where we draw the actual red line
 	&::before {
 		display: inline-block;
-		background-color: $color__text--red;
+		background-color: $color;
 		margin-left: -($lineLength + $lineDistance);
 		margin-right: $lineDistance;
 		margin-bottom: .33em;

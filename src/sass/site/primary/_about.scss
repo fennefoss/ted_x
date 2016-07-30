@@ -6,8 +6,8 @@
 		font-size: $font__size-h2;
 		font-weight: $light;
 		text-align: left;
-		// Import the redline mixin without indentation
-		@include redline($indent: false);
+		// Import the redline mixin
+		@include redline();
 	}
 
 	.red-frame-box {

@@ -7,8 +7,8 @@
 		font-weight: $light;
 		text-align: left;
 		margin-top: 2em;
-		// Import the redline mixin without indentation
-		@include redline($indent: false);
+		// Import the redline mixin
+		@include redline();
 	}
 
 	h3 {

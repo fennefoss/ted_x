@@ -11,14 +11,14 @@
 
 <section class="hero-unit full-width press">
 
+<?php if ( get_field( 'press_hero_infobox' ) ) : ?>
 	<div class="center">
 
 		<div class="infobox">
-			<p>Press and media coverage of the events and about the TEDxAarhus are always welcome.</p>
-			<p>&nbsp;</p>
-			<p>All press requests for the official TEDxAarhus logo, photographs, press-releases, write-ups or any press-related information should be emailed to the marketing group: <a href="mailto:marketing@tedxaarhus.com">marketing@tedxaarhus.com</a>.</p>
+			<?php the_field( 'press_hero_infobox' ); ?>
 		</div><!-- .infobox -->
 
 	</div><!-- .center -->
+<?php endif; ?>
 
 </section><!-- .hero-unit -->
