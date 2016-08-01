@@ -7,44 +7,18 @@
  * @package ted_x
  */
 
-$post_image = get_field('post_image');
-$post_header = get_field('post_header');
-$post_text = get_field('post_text');
-$post_link = get_field('post_link');
-$speaker_title = get_field('speaker_title');
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-
 		<?php
 			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			} else {
-				the_title( '<h2 class="entry-title teaser"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
-
-		<h3 class="speaker-title">
-			<?php echo $speaker_title; ?>
-			<?php the_field('speaker_title', get_option('page_for_posts')); ?>
-		</h3>
-
-		<div class="post-teaser">
-			<a class="post-teaser-link" href="<?php echo $post_link; ?>">
-				<img class="post-teaser-img" src="<?php echo $post_image['url']; ?>">
-			</a>
-			<div class="post-teaser-text">
-				<a href="<?php echo $post_link; ?>">
-					<h2><?php echo $post_header; ?></h2>
-				</a>
-				<hr/>
-				<p><?php echo $post_text; ?></p>
-			</div>
-		</div>
-
 		<div class="entry-meta">
 			<?php ted_x_posted_on(); ?>
 		</div><!-- .entry-meta -->
