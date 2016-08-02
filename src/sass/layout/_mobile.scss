@@ -1,0 +1,76 @@
+// Mobile styles
+
+@media screen and ( max-width: 782px ) {
+
+    html, body {
+      overflow-x:hidden 
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    button:active, button:focus {
+        box-shadow: none;
+    }
+
+    .content-area {
+        width: 100%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .menu-toggle {
+        background: url("images/menu_icon.svg") 50% 50% no-repeat;
+        border: none;
+        box-shadow: none !important;
+        height: 50px;
+        width: 50px;
+        float: right;
+        text-shadow: none;
+        z-index: 999;
+        text-indent: -9999px;
+        background-size: 50px;
+        margin-right: 15px;
+        margin-top: -55px;
+        outline: none;
+    }
+
+    .menu-toggle[aria-expanded="true"] {
+        background: url("images/close_icon.svg") 50% 50% no-repeat;
+        background-size: 50px;
+    }
+
+    .navigation-section {
+        width: 100%;
+    }
+
+    .main-navigation.toggled {
+        .navigation-section {
+            width: 100%;
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    .main-navigation li {
+        background-color: #000;
+        width: 100%;
+    }
+
+    .red-page-header {
+        width: 100%;
+    }
+
+}
