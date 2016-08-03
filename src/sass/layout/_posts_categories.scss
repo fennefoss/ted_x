@@ -94,7 +94,7 @@
 		margin-left: 245px;
 		color: #fff;
 		width: 750px;
-		font-weight: $light;
+		font-weight: $font__weight-light;
 	}
 }
 
@@ -131,7 +131,7 @@
     	box-shadow: none;
     	text-shadow: none;
     	border-radius: 0;
-    	border: 2px solid $color__text--red;
+    	border: 2px solid $color__text-red;
     	padding: 12px 45px;
     	transition: all 0.3s ease 0s;
     	text-transform: uppercase;
@@ -140,8 +140,8 @@
     	margin-top: 30px;
 
     	&:hover {
-    		background-color: $color__text--red;
-    		border-color: $color__text--red;
+    		background-color: $color__text-red;
+    		border-color: $color__text-red;
     		box-shadow: none;
     	}
 
@@ -149,7 +149,7 @@
     		font-weight: bold;
     		font-size: 16px;
     		text-decoration: none;
-    		color: $color__text--red;
+    		color: $color__text-red;
     		display: block;
     		padding: 20px;
 
