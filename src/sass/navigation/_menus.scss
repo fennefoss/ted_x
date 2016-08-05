@@ -111,7 +111,7 @@ $navigation__height: 90px;
 }
 
 .header-container {
-	width: 1180px;
+	max-width: $container__max-width;
 	height: 90px;
 	margin: auto;
 }

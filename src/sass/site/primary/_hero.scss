@@ -1,7 +1,7 @@
 .hero-unit {
 	// General purpose centering and columnn rules
 	.center {
-		max-width: 1180px;
+		max-width: $container__max-width;
 		padding-top: 32px;
 		@include center-block;
 	}

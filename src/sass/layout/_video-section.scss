@@ -5,7 +5,7 @@
 }
 
 .video-section {
-	width: 1180px;
+	max-width: $container__max-width;
 	position: absolute;
 	top: 12%;
 	left: 12%;

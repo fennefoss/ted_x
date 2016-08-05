@@ -1,7 +1,7 @@
 .site-footer {
 	// General purpose centering and columnn rules
 	.center {
-		max-width: 1180px;
+		max-width: $container__max-width;
 		margin: 0 auto;
 	}
 	.center:after {
