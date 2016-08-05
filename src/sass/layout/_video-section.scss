@@ -14,11 +14,13 @@
 .video-header {
 	text-align: left;
 	margin-bottom: 0;
+	font-size: 68px;
+	font-weight: $font__weight-bold;
+	color: $color__text-white;
 
 	span {
 		color: $color__text-red;
 	}
-
 }
 
 .video-text {
@@ -48,6 +50,6 @@
 	text-decoration: none;
 
 	&:hover {
-		color: $color__text-white;	
+		color: $color__text-white;
 	}
 }
