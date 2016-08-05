@@ -24,30 +24,24 @@
 }
 
 // Insert a red line before hedings
-@mixin redline($lineLength: 90px, $lineDistance: 20px, $lineWidth: 2px, $color: $color__text--red, $indent: false) {
+@mixin redline($lineLength: 90px, $lineDistance: 20px, $lineWidth: 2px, $color: $color__text-red, $indent: false) {
 	color: $color;
-	font-weight: $light;
-	// This defaults to true, unless a false $indent var is passed
-	@if $indent {
-		margin-left: $lineLength + $lineDistance;
-	}
-	// Apply .left or .right to elements to align text
-	&.left {
-		text-align: left;
-	}
-	&.right {
-		text-align: right;
-	}
-	// This is where we draw the actual red line
-	&::before {
-		display: inline-block;
-		background-color: $color;
-		margin-left: -($lineLength + $lineDistance);
-		margin-right: $lineDistance;
-		margin-bottom: .33em;
-		width: $lineLength;
-		height: $lineWidth;
-		content: " ";
+	@media screen and ( min-width: 782px ) {
+		// This defaults to true, unless a false $indent var is passed
+		@if $indent {
+			margin-left: $lineLength + $lineDistance;
+		}
+		// This is where we draw the actual red line
+		&::before {
+			display: inline-block;
+			background-color: $color;
+			margin-left: -($lineLength + $lineDistance);
+			margin-right: $lineDistance;
+			margin-bottom: .33em;
+			width: $lineLength;
+			height: $lineWidth;
+			content: " ";
+		}
 	}
 }
 
@@ -62,6 +56,6 @@
 	p, a, h1, h2 {
 		margin: 0;
 		color: white;
-		font-weight: $light;
+		font-weight: $font__weight-light;
 	}
 }

@@ -1,3 +1,70 @@
 @import "buttons";
-
 @import "fields";
+
+// Styles for the contact form and its elements
+.wpcf7-form {
+	input {
+		border: 0;
+		outline: 0;
+		background: transparent;
+		border-bottom: 1px solid #c3c3c3;
+		width: 100%;
+		border-radius: 0;
+		font-size: 22px;
+	}
+	span.sender-message {
+		background-color: rgb(166, 166, 166);
+		box-shadow: 0px 19px 0px 0px rgba(147, 147, 147, 0.004);
+		z-index: 32;
+		max-width: 100%;
+	}
+	textarea {
+		border: 0;
+		padding: 20px;
+		color: #ffffff;
+		border-radius: 0;
+		background-color: #a6a6a6;
+		width: 100%;
+		-webkit-box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
+		-moz-box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
+		box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
+		line-height: 1.4;
+	}
+	textarea:hover,
+	textarea:active,
+	textarea:focus {
+		outline:0px !important;
+		-webkit-appearance:none;
+	}
+
+	input[type="submit"] {
+		background: transparent;
+		box-shadow: none;
+		text-shadow: none;
+		border-radius: 0;
+		border: 1px solid #ff2b06;
+		padding: 12px 45px;
+		transition: all 0.3s ease 0s;
+		text-transform: uppercase;
+		color: #ff2b06;
+		font-size: 1.25rem;
+		line-height: 1.5;
+		letter-spacing: 0.125em;
+		font-weight: bold;
+
+		&:hover {
+			border: 1px solid #ff2b06;
+			box-shadow: none;
+			background-color: #ff2b06;
+			border-color: #ff2b06;
+			box-shadow: none;
+			color: #ffffff;
+		}
+	}
+}
+
+// Styles for the confirmation message
+.wpcf7-mail-sent-ok {
+	color: #398f14;
+	font-weight: 300;
+}

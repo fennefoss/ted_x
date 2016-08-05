@@ -1,0 +1,49 @@
+
+// Styles for the red infobox in page headers
+.red-page-header {
+	background-color: #ff2b06;
+	-webkit-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+	-moz-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+	box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
+	padding: 2em 10em;
+
+	// Less padding on mobile screens
+	@media screen and ( max-width: 782px ) {
+		padding: 1em;
+		width: 100%;
+	}
+
+	h1, h2 {
+		// Use the redline mixin with a custom color
+		@include redline($color: #7d1300);
+		// Customize the standard heading styles
+		font-weight: $font__weight-light;
+		font-size: $font__size-h2;
+		text-align: left;
+	}
+
+	p {
+		color: #fff;
+		max-width: 750px;
+		text-align: left;
+		font-weight: $font__weight-light;
+	}
+}
+
+// Styles for the red box
+.red-page-header-old {
+	padding: 60px 10em;
+	margin-bottom: 100px;
+
+
+	margin-right: 100px;
+	margin-left: 245px;
+}
+
+%red__box {
+	height: auto;
+
+	position: relative;
+	text-align: left;
+
+}

@@ -12,7 +12,7 @@
 		// Use the redline mixin with a custom color
 		h1, h2, h3 {
 			font-size: $font__size-h2;
-			font-weight: $light;
+			font-weight: $font__weight-light;
 			text-align: left;
 			@include redline($color: #7d1300);
 		}
@@ -64,7 +64,7 @@
 .single-team_manager {
 	h1, h2, h3 {
 		font-size: $font__size-h2;
-		font-weight: $light;
+		font-weight: $font__weight-light;
 		text-align: left;
 		// Import the redline mixin
 		@include redline();

@@ -1,29 +1,3 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# 1.General typography
-# 2.Other typography
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# 1.General Typopgraphy
---------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,500);
-$font__main: 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-$color__text-body: #000000;
-$color__text-red: #ff2b06;
-$color__text-white: #ffffff;
-$color__text-grey: #6a6a6a;
-$color__text-darkred: #7d1300;
-$font__size-p: 22px;
-$font__size-h1: 68px;
-$font__size-h2: 40px;
-$light: 100;
-$normal: 300;
-$bold: 500;
-$font__size: 22px;
-$center: center;
-
-
 body,
 button,
 input,
@@ -32,42 +6,9 @@ textarea {
 	color: $color__text-body;
 	font-family: $font__main;
 	@include font-size(1);
-	font-weight: $light;
+	font-weight: $font__weight-light;
 	-webkit-text-size-adjust: 100%;  //fix for iOS
 }
-
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
-	text-align: $center;
-}
-
-p {
-	font-size: $font__size-p;
-	line-height: 1.4em;
-	font-weight: $normal;
-	
-}
-
-h1 {
-	color: $color__text-white;
-	font-size: $font__size-h1;
-	font-weight: $bold;
-
-	.darkred {
-		color: $color__text-darkred;
-	}
-}
-
-.entry-title a,
-h2 {
-	color: $color__text-red;
-	font-size: $font__size-h2;
-	font-weight: $light;
-}
-
-/*--------------------------------------------------------------
-# 2. Other Typography
---------------------------------------------------------------*/
 
 mark, ins {
 	background: $color__background-ins;
@@ -77,3 +18,6 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+@import "headings";
+@import "copy";
