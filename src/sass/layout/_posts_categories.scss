@@ -70,37 +70,8 @@
     margin-left: 0;
 }
 
-.red-page-header {
-	@extend %red__box;
-
-	.red-page-header__line {
-		width: 62px;
-		background-color: #7d1300;
-		margin-left: 150px;
-		height: 2px;
-	}
-
-	.red-page-header__headline {
-		color: #7d1300;
-		text-align: left;
-		position: absolute;
-    	top: 22px;
-    	left: 245px;
-	}
-
-	.red-page-header__text {
-		text-align: left;
-		margin-right: 100px;
-		margin-left: 245px;
-		color: #fff;
-		width: 750px;
-		font-weight: $font__weight-light;
-	}
-}
-
-
 .landing-page-container {
-	
+
 	.category-news {
 		width: 50%;
     	float: left;
@@ -183,7 +154,7 @@
 
 	.entry-header {
 		margin-left: 360px;
-		
+
 		h2 {
 			text-align: left;
 			margin-bottom: 10px;
