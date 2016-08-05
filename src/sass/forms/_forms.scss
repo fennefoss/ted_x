@@ -8,17 +8,15 @@
 		outline: 0;
 		background: transparent;
 		border-bottom: 1px solid #c3c3c3;
-		width: 700px;
+		width: 100%;
 		border-radius: 0;
 		font-size: 22px;
 	}
 	span.sender-message {
 		background-color: rgb(166, 166, 166);
 		box-shadow: 0px 19px 0px 0px rgba(147, 147, 147, 0.004);
-		/*width: 709px;
-		height: 262px;*/
 		z-index: 32;
-		width: 700px;
+		max-width: 100%;
 	}
 	textarea {
 		border: 0;
@@ -26,7 +24,7 @@
 		color: #ffffff;
 		border-radius: 0;
 		background-color: #a6a6a6;
-		width: 700px;
+		width: 100%;
 		-webkit-box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
 		-moz-box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
 		box-shadow: 10px 10px 0px 0px rgba(147,147,147,1);
