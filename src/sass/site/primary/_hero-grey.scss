@@ -1,4 +1,11 @@
-.hero-unit {
+.hero-unit.grey {
+	margin-top: 90px;
+	min-height: 600px;
+	background-color: #e0e0e0;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+
 	// General purpose centering and columnn rules
 	.center {
 		max-width: $container__max-width;

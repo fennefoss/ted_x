@@ -1,15 +1,5 @@
-.page-template-custom-about-us-page article {
-	// Set the same margin as found on the Team and Contact pages
-	margin: 4em 10em;
-
-	h1, h2, h3 {
-		font-size: $font__size-h2;
-		font-weight: $font__weight-light;
-		text-align: left;
-		// Import the redline mixin
-		@include redline();
-	}
-
+// Styles for the pop-up infobox in the page content
+.hentry {
 	.red-frame-box {
 		float: right;
 		margin: 1em 0 1em 2em;
