@@ -49,7 +49,8 @@
 	color: $color__text-white;
 	text-decoration: none;
 
-	&:hover {
+	&:hover,
+	&:visited {
 		color: $color__text-white;
 	}
 }
