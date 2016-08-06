@@ -2,6 +2,11 @@
 	width: 100%;
 	margin-top: 58px;
 	position: relative;
+	video {
+		background: url('images/stars.jpg');
+		background-size: cover;
+		min-width: 100%
+	}
 }
 
 .video-section {

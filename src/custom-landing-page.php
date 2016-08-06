@@ -36,9 +36,8 @@ get_header(); ?>
 	?>
 
 	<header class="video-container">
-		<video class="video" width="100%" autoplay="autoplay" loop poster="<?php echo get_template_directory_uri() . '/images/stars.jpg'; ?>">
+		<video class="video" autoplay="autoplay" loop>
 			<source src="<?php echo $video['url']; ?>" type="video/mp4">
-			Your browser does not support HTML5 video
 		</video>
 
 		<section class="video-section">
