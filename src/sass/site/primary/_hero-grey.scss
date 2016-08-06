@@ -1,4 +1,12 @@
-.hero-unit {
+// Styles for the large hero unit with grey infobox
+.hero-unit.grey {
+	margin-top: 90px;
+	min-height: 600px;
+	background-color: #e0e0e0;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+
 	// General purpose centering and columnn rules
 	.center {
 		max-width: $container__max-width;
@@ -14,7 +22,8 @@
 	}
 
 	.infobox {
-		@include infobox(#959595);
+		@include infobox( #959595, #fff, 700px );
+		padding: 32px;
 	}
 }
 

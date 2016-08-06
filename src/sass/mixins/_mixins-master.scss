@@ -46,16 +46,17 @@
 }
 
 // Large infobox with drop shadow
-@mixin infobox($boxColor: #999) {
+@mixin infobox($boxColor: #999, $textColor: #fff, $maxWidth: null) {
+	margin: 100px 0;
 	background-color: $boxColor;
 	box-shadow: 10px 11px 0px 0px rgba(darken($boxColor, 10), 0.3);
-	max-width: 700px;
-	margin: 100px 0;
-	padding: 3em;
-	// Remove margin from children
+	// Set a max width if applicable
+	@if $maxWidth {
+		max-width: $maxWidth;
+	}
+	// Make sure contained tex has the right color
 	p, a, h1, h2 {
-		margin: 0;
-		color: white;
+		color: $textColor;
 		font-weight: $font__weight-light;
 	}
 }

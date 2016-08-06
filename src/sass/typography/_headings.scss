@@ -17,3 +17,10 @@ h2 {
 	color: $color__text-red;
 	font-weight: $font__weight-light;
 }
+
+// Use the redline mixin for headings in posts
+.entry-content {
+	> h1, > h2 {
+		@include redline;
+	}
+}
