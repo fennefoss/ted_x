@@ -36,17 +36,20 @@ get_header(); ?>
 	?>
 
 	<header class="video-container">
+		<?php if( get_field( 'video' )['url'] ) : ?>
 		<video class="video" autoplay="autoplay" loop>
 			<source src="<?php echo $video['url']; ?>" type="video/mp4">
 		</video>
-
-		<section class="video-section">
-			<h1 class="video-header"><?php echo $video_header; ?></h1>
-			<p class="video-text"><?php echo $video_text; ?></p>
-			<button class="video-button">
-				<a class="video-button-link" href="<?php echo $video_button_link; ?>"><?php echo $video_button_text; ?></a>
-			</button>
-		</section>
+		<?php endif; ?>
+		<div class="content">
+			<section class="video-section">
+				<h1 class="video-header"><?php echo $video_header; ?></h1>
+				<p class="video-text"><?php echo $video_text; ?></p>
+				<button class="video-button">
+					<a class="video-button-link" href="<?php echo $video_button_link; ?>"><?php echo $video_button_text; ?></a>
+				</button>
+			</section>
+		</div>
 	</header>
 
 	<div id="primary" class="content-area landing-page-container">
