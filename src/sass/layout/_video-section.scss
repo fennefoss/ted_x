@@ -1,47 +1,71 @@
 .video-container {
 	width: 100%;
-	margin-top: 58px;
-	position: relative;
+	margin-top: 90px;
+	overflow: hidden;
+
+	background: url('images/stars.jpg');
+	background-size: cover;
+
+	video {
+		min-width: 100%;
+	}
+
+	.content {
+		max-width: $container__max-width;
+		margin: 0 auto;
+		position: relative;
+	}
 }
 
 .video-section {
-	max-width: $container__max-width;
-	position: absolute;
-	top: 12%;
-	left: 12%;
+	// Make sure we've got pleanty of space and centered margins
+	margin: 100px auto;
+
+	@media screen and ( max-width: 782px ) {
+		margin: 50px auto;
+	}
 }
 
 .video-header {
 	text-align: left;
-	margin-bottom: 0;
 	font-size: 68px;
 	font-weight: $font__weight-bold;
 	color: $color__text-white;
-
+	// Make sure the TEDx span is red
 	span {
 		color: $color__text-red;
+	}
+
+	@media screen and ( max-width: 782px ) {
+		font-size: 2.33em;
 	}
 }
 
 .video-text {
 	color: $color__text-white;
+	max-width: 580px;
 }
 
 .video-button {
 	background: transparent;
-    box-shadow: none;
-    text-shadow: none;
-    border-radius: 0;
-    border: 1px solid $color__text-red;
-    padding: 12px 45px;
-    transition: all 0.3s ease 0s;
-    text-transform: uppercase;
+	box-shadow: none;
+	text-shadow: none;
+	border-radius: 0;
+	border: 1px solid $color__text-red;
+	padding: 12px 45px;
+	margin: 30px auto;
+	transition: all 0.3s ease 0s;
+	text-transform: uppercase;
 
-    &:hover {
-    	background-color: $color__text-red;
-    	border-color: $color__text-red;
-    	box-shadow: none;
-    }
+	&:hover {
+		background-color: $color__text-red;
+		border-color: $color__text-red;
+		box-shadow: none;
+	}
+
+	@media screen and ( max-width: 782px ) {
+		width: 100%;
+	}
 }
 
 .video-button-link {

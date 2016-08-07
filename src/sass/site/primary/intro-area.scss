@@ -1,8 +1,15 @@
 .intro {
 	text-align: center;
-	margin: 110px 0;
-}
+	max-width: 800px;
+	margin: 110px auto;
 
-.intro-text {
-	margin-top: 65px;
+	h1, h2, p {
+		margin: 65px auto;
+	}
+
+	@media screen and ( max-width: 782px ) {
+		h1, h2 {
+			font-weight: 200;
+		}
+	}
 }
