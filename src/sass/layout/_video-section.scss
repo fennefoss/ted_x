@@ -62,6 +62,10 @@
 		border-color: $color__text-red;
 		box-shadow: none;
 	}
+
+	@media screen and ( max-width: 782px ) {
+		width: 100%;
+	}
 }
 
 .video-button-link {
@@ -72,9 +76,5 @@
 	&:hover,
 	&:visited {
 		color: $color__text-white;
-	}
-
-	@media screen and ( max-width: 782px ) {
-		width: 100%;
 	}
 }
