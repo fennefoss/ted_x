@@ -26,13 +26,30 @@
     -moz-box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
     box-shadow: 10px 11px 0px 0px rgba(210,222,232,1);
     position: relative;
+
+	@media screen and ( max-width: 782px ) {
+		margin: 12px auto;
+		height: 360px;
+	}
+}
+
+@media screen and ( max-width: 782px ) {
+	.locotweet-container * {
+		top: auto;
+		left: auto;
+	}
 }
 
 .locotweet-header {
 	position: absolute;
 	color: #7d1300;
 	margin-left: 235px;
-    top: 35px;
+	top: 35px;
+
+	@media screen and ( max-width: 782px ) {
+		margin: 16px 5%;
+		font-weight: 200;
+	}
 }
 
 .locotweet-line {
@@ -42,6 +59,9 @@
     width: 62px;
     top: 92px;
     margin-left: 150px;
+		@media screen and ( max-width: 782px ) {
+			display: none;
+		}
 }
 
 .locotweet-buttons {
@@ -50,6 +70,13 @@
 	float: left;
 	margin-top: 162px;
 	margin-left: 100px;
+
+	@media screen and ( max-width: 782px ) {
+		min-width: 40px;
+		width: 10%;
+		margin-top: 80px;
+		margin-left: 5%;
+	}
 
 	button {
 		background: #ff2b06;
@@ -71,6 +98,13 @@
 	width: 484px;
 	margin-top: 130px;
 	margin-left: 50px;
+
+	@media screen and ( max-width: 782px ) {
+		width: 80%;
+		margin-left: 0;
+		margin-top: 80px;
+		font-weight: 200;
+	}
 
 	a {
 		color: white;
