@@ -98,6 +98,10 @@
     position: absolute;
     right: 60px;
     top: -68px;
+
+		@media screen and ( max-width: 782px ) {
+			display: none;
+		}
 }
 
 .locotweet-follow {
