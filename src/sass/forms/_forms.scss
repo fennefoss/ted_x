@@ -10,7 +10,6 @@
 		border-bottom: 1px solid #c3c3c3;
 		width: 100%;
 		border-radius: 0;
-		font-size: 22px;
 	}
 	span.sender-message {
 		background-color: rgb(166, 166, 166);
@@ -47,10 +46,11 @@
 		transition: all 0.3s ease 0s;
 		text-transform: uppercase;
 		color: #ff2b06;
-		font-size: 1.25rem;
 		line-height: 1.5;
 		letter-spacing: 0.125em;
 		font-weight: bold;
+		// Apply font-size from <big> element:
+		@extend big;
 
 		&:hover {
 			border: 1px solid #ff2b06;
