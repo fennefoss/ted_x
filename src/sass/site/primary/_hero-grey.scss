@@ -17,7 +17,6 @@
 	.quote p,
 	.quote h1,
 	.quote h2 {
-		font-size: $font__size-h2;
 		@include redline(1.5em, 0.5em);
 	}
 

@@ -28,16 +28,16 @@
 
 .video-header {
 	text-align: left;
-	font-size: 68px;
 	font-weight: $font__weight-bold;
 	color: $color__text-white;
+	@include font-size(4);
 	// Make sure the TEDx span is red
 	span {
 		color: $color__text-red;
 	}
 
 	@media screen and ( max-width: 782px ) {
-		font-size: 2.33em;
+		@include font-size(2.33);
 	}
 }
 

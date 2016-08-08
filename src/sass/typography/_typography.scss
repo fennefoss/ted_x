@@ -3,10 +3,10 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-body;
+	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size(1);
-	font-weight: $font__weight-light;
+	@include font-size(1.2);
+	font-weight: $font__weight-normal;
 	-webkit-text-size-adjust: 100%;  //fix for iOS
 }
 
@@ -15,9 +15,6 @@ mark, ins {
 	text-decoration: none;
 }
 
-big {
-	font-size: 125%;
-}
 
 @import "headings";
 @import "copy";

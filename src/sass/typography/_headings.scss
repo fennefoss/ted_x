@@ -3,7 +3,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: $font__size-h1;
 	color: $color__text-red;
 	font-weight: $font__weight-light;
 
@@ -13,9 +12,12 @@ h1 {
 }
 
 h2 {
-	font-size: $font__size-h2;
 	color: $color__text-red;
 	font-weight: $font__weight-light;
+
+	&.darkred {
+		color: $color__text-darkred;
+	}
 }
 
 // Use the redline mixin for headings in posts
