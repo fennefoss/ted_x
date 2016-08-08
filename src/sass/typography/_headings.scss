@@ -16,6 +16,10 @@ h2 {
 	font-size: $font__size-h2;
 	color: $color__text-red;
 	font-weight: $font__weight-light;
+
+	&.darkred {
+		color: $color__text-darkred;
+	}
 }
 
 // Use the redline mixin for headings in posts

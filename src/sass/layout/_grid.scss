@@ -7,24 +7,6 @@ body {
 	background: #ededed url('images/background.svg') 100%/100% no-repeat;
 }
 
-.entry-content a {
-  color: #ff2b06;
-  text-decoration: none;
-
-  &:visited {
-    color: #ff2b06;
-  }
-  &:hover,
-  &:focus,
-  &:active {
-    color: #7d1300;;
-  }
-  &:hover,
-  &:active {
-    outline: 0;
-  }
-}
-
 .site-info {
   display: none;
 }
