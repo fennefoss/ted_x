@@ -36,11 +36,10 @@ get_header(); ?>
 	?>
 
 	<header class="video-container">
-		<?php if( get_field( 'video' )['url'] ) : ?>
-		<video class="video" autoplay="autoplay" loop>
-			<source src="<?php echo $video['url']; ?>" type="video/mp4">
+		<video class="video" autoplay="autoplay" loop poster="<?php bloginfo('template_url'); ?>/images/stars.jpg">
+			<source src="<?php bloginfo('template_url'); ?>/images/space.mp4" type="video/mp4">
 		</video>
-		<?php endif; ?>
+		<div class="shadow-inset"></div>
 		<div class="content">
 			<section class="video-section">
 				<h1 class="video-header"><?php echo $video_header; ?></h1>
