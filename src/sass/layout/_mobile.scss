@@ -10,6 +10,10 @@
         box-shadow: none;
     }
 
+    .shadow-inset {
+        display: none;
+    }
+
     .video-container .content,
     .content-area {
         width: 96%;
@@ -51,12 +55,16 @@
         .navigation-section {
             width: 100%;
             border-bottom: 1px solid #fff;
+            height: 100vh;
+            background: #000;
         }
     }
 
     .main-navigation li {
         background-color: #000;
         width: 100%;
+        height: 55px;
+        line-height: 55px;
     }
 
     .red-page-header {
