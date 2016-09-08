@@ -111,7 +111,7 @@ $navigation__height: 90px;
 }
 
 .header-container {
-	max-width: $container__max-width;
+	max-width: 1280px;
 	height: 90px;
 	margin: auto;
 }
@@ -146,6 +146,7 @@ $navigation__height: 90px;
 	.main-navigation ul {
 		display: block;
 	}
+
 }
 
 .comment-navigation,

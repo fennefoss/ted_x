@@ -2,19 +2,38 @@
 	width: 100%;
 	margin-top: 90px;
 	overflow: hidden;
-
-	background: url('images/stars.jpg');
-	background-size: cover;
+	position: relative;
+	background: #000;
+	height: 660px;
 
 	video {
 		min-width: 100%;
 	}
 
 	.content {
-		max-width: $container__max-width;
-		margin: 0 auto;
-		position: relative;
+		max-width: 1180px;
+	    margin: 0 auto;
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    margin-left: -590px;
+
+	    @media screen and ( max-width: 782px ) {
+			margin-left: 8px !important;
+			left: 0;
+		}
 	}
+}
+
+.shadow-inset {
+	box-shadow: inset 0px 0px 350px #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    max-width: 1550px;
 }
 
 .video-section {
