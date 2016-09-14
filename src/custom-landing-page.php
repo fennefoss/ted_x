@@ -44,9 +44,11 @@ get_header(); ?>
 			<section class="video-section">
 				<h1 class="video-header"><?php echo $video_header; ?></h1>
 				<p class="video-text"><?php echo $video_text; ?></p>
+				<?php if ( get_field( 'video_button_link' ) && get_field( 'video_button_text' ) ): ?>
 				<button class="video-button">
 					<a class="video-button-link" href="<?php echo $video_button_link; ?>"><?php echo $video_button_text; ?></a>
 				</button>
+				<?php endif; ?>
 			</section>
 		</div>
 	</header>
